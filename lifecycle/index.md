@@ -36,6 +36,8 @@ bootstrap(MyApp)
 {% endraw %}
 ```
 
+This component is where you can put application-level code and configuration, and its template
+is where the whole app component chain gets created.
 
 ## Component Init
 
