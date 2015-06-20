@@ -36,6 +36,7 @@ bootstrap(MyApp)
 {% endraw %}
 ```
 
+
 ## Component Init
 
 When a component is created, its constructor is called. This is where we initialize state
