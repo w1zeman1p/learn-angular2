@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Templates
+title: WTF is ES6/TypeScript/AtScript/Babel?
 edit_link: https://github.com/driftyco/learn-angular2/edit/gh-pages/es6/index.md
 tweet: "ES6/TypeScript - What is all this?"
 ---
