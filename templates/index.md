@@ -19,8 +19,43 @@ Let's start with a very simple template that shows our name and our favorite thi
 {% endraw %}
 ```
 
-## Rendering
+## `{}`: Rendering
 
-To render a string, we can use the standard double-curly syntax:
+To render a value, we can use the standard double-curly syntax:
 
+```html
+{% raw %}
+My name is {{name}}
+{% endraw %}
+```
+
+Pipes, previously known as "Filters," are still in the process of being fully implemented, but will function pretty
+much the same.
+
+## `[]`: Binding properties
+
+To resolve and bind a variable to a component, use the `[]` syntax:
+
+```html
+<video-control [player]="myPlayer"></video-control>
+```
+
+If the `<video-control>` component has declared the `player` property, it will be accessible in the instance
+of the component's class.
+
+## `()`: Handling events
+
+To listen for an event on a component, we use the `()` stynax
+
+```html
+<my-component (click)="onClick($event)"></my-component>
+```
+
+To use event delegation, where an event on a child will bubble up to the parent, use the `^` before the event name:
+
+```html
+<my-component (^click)="onClick($event)">
+  <button>I bubble up</button>
+</my-component>
+```
 
