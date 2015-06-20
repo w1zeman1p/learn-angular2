@@ -14,7 +14,7 @@ Angular 2 apps (currently) need to be bootstrapped using the root component for 
 
 In your main JS file for our app, we put this:
 
-```typescript
+```javascript
 {% raw %}
 import {Component, View, bootstrap} from 'angular2/angular2';
 
@@ -45,7 +45,7 @@ to wait for a digest period first.
 To do this, we can wait through a `setTimeout`, or use the recommended component lifecycle event
 `onInit`:
 
-```typescript
+```javascript
 import {Component, View, bootstrap, onInit} from 'angular2/angular2';
 
 // Annotation section
@@ -88,7 +88,7 @@ class StreetMap {
 
 Like `onInit`, we can track several events through the lifecycle of an component:
 
-```typescript
+```javascript
 import {..., onInit, onDestroy, onChange, onCheck, onAllChangesDone} from 'angular2/angular2';
 
 // Annotation section
