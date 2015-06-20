@@ -15,6 +15,7 @@ Angular 2 apps (currently) need to be bootstrapped using the root component for 
 In your main JS file for our app, we put this:
 
 ```typescript
+{% raw %}
 import {Component, View, bootstrap} from 'angular2/angular2';
 
 // Annotation section
@@ -32,6 +33,7 @@ class MyApp {
 }
 
 bootstrap(MyApp)
+{% endraw %}
 ```
 
 ## Component Init
