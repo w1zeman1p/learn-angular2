@@ -21,7 +21,7 @@ import {Component, View} from 'angular2/angular2'
   selector: 'my-component'
 })
 @View({
-  inline: "<div>Hello my name is {{name}}</div>"
+  inline: "<div>Hello my name is {{name}}. <button (click)="sayMyName()">Say my name</button></div>"
 })
 export class MyComponent {
   constructor() {
@@ -33,3 +33,5 @@ export class MyComponent {
 }
 ```
 
+When we use the `<my-component></my-component>` tag in our HTML, this component will be created,
+our constructor called, and rendered.
