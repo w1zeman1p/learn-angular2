@@ -8,6 +8,7 @@ title: Learn Angular 2
 Angular 2 is the next version of Google's massively popular MV* framework for building complex
 applications in the browser (and beyond).
 
-We hope these simple tutorials help you get up and running with Angular 2 quickly.
+We hope these simple tutorials help you get up and running with Angular 2 quickly, which cover the basics of using Angular 2 and ES6/TypeScript.
 
-**THIS IS A VERY EARLY VERSION AND IS NOT COMPLETE NOR PUBICLY ANNOUCNED**
+<3 The Ionic Team
+[http://ionicframework.com/](http://ionicframework.com/)
