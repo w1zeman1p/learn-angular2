@@ -37,14 +37,14 @@ AtScript was an experimental language created by Google to extend JS and Typescr
 features such as annotations and type introspection. It is now defunct.
 
 Typescript is Microsoft's extension of JS that comes with powerful type checking abilities and
-object oriented features.
+object oriented features. Both Angular 2 and Ionic 2 use TypeScript.
 
 ES6 is the next version of Javascript that was just [recently approved](http://www.infoq.com/news/2015/06/ecmascript-2015-es6) that comes with a ton of new ways to write JS. ES7 is a future standard of JS that some are already implementing
 in these higher level languages.
 
 ### Conclusion
 
-If you'd like to develop with "plain" ES6 and ES7, we strongly recommend using [Babel](https://babeljs.io/), the "compiler for writing next generation Javascript." Ionic 2 currently uses Babel to convert its futuristic JS into JS the browser can run today.
+If you'd like to develop with "plain" ES6 and ES7, you can use [Babel](https://babeljs.io/), the "compiler for writing next generation Javascript." If you'd like to use Ionic and Angular, we recommend TypeScript which will provide similar features as babel, with extra type checking if you choose to use it.
 
 If you're interested in type checking and new OO features, or want to contribute to Angular 2, check out [TypeScript](http://www.typescriptlang.org/).
 
