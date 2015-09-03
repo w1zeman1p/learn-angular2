@@ -18,12 +18,12 @@ Let's start with a very simple component that lists out our name:
 import {Component, View} from 'angular2/angular2'
 
 @Component({
-  selector: 'my-component'
+  selector: 'my-name'
 })
 @View({
-  inline: "<div>Hello my name is {{name}}. <button (click)="sayMyName()">Say my name</button></div>"
+  template: "<div>Hello my name is {{name}}. <button (click)="sayMyName()">Say my name</button></div>"
 })
-export class MyComponent {
+export class MyNameComponent {
   constructor() {
     this.name = 'Max'
   }
@@ -33,5 +33,28 @@ export class MyComponent {
 }
 ```
 
-When we use the `<my-component></my-component>` tag in our HTML, this component will be created,
+When we use the `<my-name></my-name>` tag in our HTML, this component will be created,
 our constructor called, and rendered.
+
+The way that an Angular application is started is by passing a root component to
+the `bootstrap()` method. Let's add that to our code so that we can test it out.
+
+```javascript
+import {Component, View, bootstrap} from 'angular2/angular2'
+
+@Component({
+  selector: 'my-name'
+})
+@View({
+  template: "<div>Hello my name is {{name}}. <button (click)="sayMyName()">Say my name</button></div>"
+})
+export class MyNameComponent {
+  constructor() {
+    this.name = 'Max'
+  }
+  sayMyName() {
+    console.log('My name is', this.name)
+  }
+}
+bootstrap(MyNameComponent);
+```
